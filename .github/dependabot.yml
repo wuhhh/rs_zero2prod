@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Keep GitHub Actions (checkout, upload-artifact, etc.) up to date
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Keep Cargo dependencies up to date (kicks in as you add crates)
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
