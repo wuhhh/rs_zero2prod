@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 actix-web = "4"
+serde = { version = "1.0.229", features = ["derive"] }
 tokio = { version = "1.53.1", features = ["macros", "rt-multi-thread"] }
 
 [lib]
@@ -15,4 +16,4 @@ path = "src/main.rs"
 name = "zero2prod"
 
 [dev-dependencies]
-reqwest = "0.13.4"
+reqwest = { version = "0.13.4", features = ["form"] }
